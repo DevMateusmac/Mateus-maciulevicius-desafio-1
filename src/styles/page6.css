@@ -1,0 +1,171 @@
+.p6-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 3rem;
+}
+
+.p6-form-section form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 460px;
+}
+
+.p6-form-section form p{
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+
+.p6-form-section form p label{
+  margin-left: .8rem;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.p6-form-section form p input{
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0.45);
+  height: 52px;
+  text-indent: .7rem;
+  font-size: 27px;
+  font-weight: 100;
+  opacity: .6;
+}
+
+form button{
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  height: 36px;
+  border-radius: 35px;
+  border: none;
+  background-color: #3EB25E;
+  color: white;
+}
+
+form button:hover{
+  background-color: #FFFF7D;
+  color: black;
+}
+
+.p6-age-input{
+  width: 162px;
+}
+
+.p6-button-section button{
+  width: 100%;
+  margin-top: .7rem;
+  height: 36px;
+  border-radius: px;
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+  .p6-main-container{
+    gap: 3rem;
+  }
+  
+  .p6-image{
+    width: 350px;
+  }
+
+  .p6-form-section form{
+    gap: 1rem;
+    width: 400px;
+  }
+
+
+  .p6-form-section form p label{
+    font-size: 23px;
+  }
+
+  .p6-form-section form p input{
+    height: 44px;
+  }
+}
+
+@media screen and (max-width: 770px){
+  .p6-main-container{
+    gap: 1.5rem;
+  }
+  
+  .p6-image{
+    width: 300px;
+  }
+
+  .p6-form-section form{
+    gap: 1rem;
+    width: 300px;
+  }
+
+
+  .p6-form-section form p label{
+    font-size: 18px;
+  }
+
+  .p6-form-section form p input{
+    height: 30px;
+    font-size: 20px;
+  }
+
+
+  .p6-button-section button{
+    font-size: 16px;
+    height: 26px;
+  }
+}
+
+
+@media screen and (max-width: 480px){
+  .p6-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1.5rem;
+  }
+
+  .p6-image{
+    width: 270px;
+  }
+
+
+  .p6-form-section form{
+    gap: 1rem;
+    width: 270px;
+  }
+
+  .p6-form-section form p{
+    gap: .3rem;
+  }
+
+  .p6-form-section form p label{
+    font-size: 16px;
+  }
+
+  .p6-form-section form p input{
+    font-size: 16px;
+    height: 33px;
+  }
+
+  .p6-age-input{
+    width: 111px;
+  }
+
+  form button{
+    font-size: 16px;
+    height: 26px;
+  }
+
+  .p6-button-section button{
+    font-size: 16px;
+    height: 26px;
+  }
+}
