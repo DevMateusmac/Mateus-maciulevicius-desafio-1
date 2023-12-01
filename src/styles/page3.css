@@ -1,0 +1,336 @@
+.p3-main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  height: 100vh;
+  width: 100%;
+}
+
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #3EB25E;
+  opacity: .3;
+  position: relative;
+  top: 23px;
+  left: 13px;
+  animation: rotate 3s linear ;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0);
+  }
+
+  to{
+    transform: rotate(90deg);
+    top: 25px;
+    left: 13px;
+    opacity: 1;
+  }
+}
+
+
+.p3-content-container{
+  margin-top: 3.5rem;
+}
+
+
+.p3-first-section{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.p3-select-container{
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.p3-triangle-container{
+  display: flex;
+}
+
+
+.p3-first-section p{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+.p3-first-section select{
+  border-radius: 20px;
+  width: 430px;
+  height: 30px;
+  appearance: none;
+  text-indent: 30px;
+
+}
+
+.p3-second-section p{
+  font-weight: 700;
+}
+
+.ellipse-input{
+  background-color: #3EB25E;
+  opacity: .3;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.p3-radio-section{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.p3-radio-section section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .6rem;
+}
+
+
+.p3-button-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.p3-button-section p{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.p3-button-section p button{
+  color: white;
+  background-color: #3EB25E;
+  font-weight: 700;
+  font-size: 22px;
+  height: 36px;
+  width: 198px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+
+.p3-button-section  button{
+  color: white;
+  background-color: #3EB25E;
+  font-weight: 700;
+  font-size: 22px;
+  height: 36px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.p3-button-section p button:hover, button:hover{
+  background-color: #FFFF7D;
+  color: #000000;
+}
+
+
+@media screen and (max-width: 1110px){
+  
+  .p3-main-container{
+    gap: 2rem;
+  }
+
+  .p3-image{
+    width: 380px;
+  }
+
+  .p3-content-container{
+    margin: 1.2rem;
+  }
+
+
+  .p3-radio-section{
+    margin: .6rem .2rem;
+  }
+
+  .p3-button-section p button{
+    width: 200px;
+    height: 30px;
+    font-size: 17px;
+  }
+
+
+  .p3-button-section  button{
+    font-size: 15px;
+    height: 30px;
+  }
+}
+
+
+@media screen and (max-width: 890px){
+  .p3-main-container{
+    gap: 2rem;
+  }
+
+  .p3-image{
+    width: 350px;
+  }
+
+  .p3-content-container{
+    margin: 1.2rem;
+    width: 350px;
+  }
+
+
+  .p3-first-section p{
+    font-size: 22px;
+  }
+
+  .p3-first-section select{
+    width: 350px;
+    height: 29px;
+  }
+
+
+  .p3-button-section p button{
+    width: 160px;
+    height: 29px;
+    font-size: 17px;
+  }
+
+
+  .p3-button-section  button{
+    font-size: 15px;
+    height: 29px;
+  }
+}
+
+
+@media screen and (max-width: 480px){
+
+  .p3-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    width: 350px;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .p3-image{
+    width: 350px;
+  }
+
+  .p3-content-container{
+    width: 350px;
+    margin: 1.5rem;
+  }
+
+  .p3-first-section p {
+    font-size: 16px;
+  }
+
+  .p3-second-section p{
+    font-size: 14px;
+  }
+
+  .p3-radio-section section{
+    font-size: 15px;
+  }
+
+  .ellipse-input{
+    height: 15px;
+    width: 15px;
+  }
+  
+  .p3-select-container select{
+    width: 270px;
+  }
+
+  .p3-button-section p button{
+    width: 150px;
+    height: 26px;
+    font-size: 15px;
+  }
+
+
+  .p3-button-section  button{
+    font-size: 15px;
+    height: 26px;
+  }
+}
+
+@media screen and (max-width: 380px){
+
+  .p3-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    width: 270px;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .p3-image{
+    width: 270px;
+  }
+
+  .p3-content-container{
+    width: 270px;
+    margin: 1.5rem;
+  }
+
+  .p3-first-section p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .p3-second-section p{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .p3-radio-section section{
+    font-size: 15px;
+  }
+
+  .ellipse-input{
+    height: 15px;
+    width: 15px;
+  }
+  
+  .p3-select-container select{
+    width: 270px;
+  }
+
+  .p3-button-section p button{
+    width: 119px;
+    height: 26px;
+    font-size: 15px;
+  }
+
+
+  .p3-button-section  button{
+    font-size: 15px;
+    height: 26px;
+  }
+}
+
+@media screen and (max-width: 280px){
+  .p3-main-container{
+    margin: .26rem;
+  }
+}
