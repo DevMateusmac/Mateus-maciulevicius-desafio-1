@@ -1,0 +1,320 @@
+.p4-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 4rem;
+}
+
+.p4-image{
+  width: 552px;
+}
+
+.p4-main-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 418px;
+  margin-top: 6rem;
+}
+
+.p4-select-section p, .p4-checkbox-section > p{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+.p4-select-section select{
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  height: 52px;
+  width: 400px;
+  font-size: 20px;
+  text-indent: 2rem;
+  appearance: none;
+}
+
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #3EB25E;
+  opacity: .3;
+  position: relative;
+  top: 37px;
+  left: 13px;
+  animation: rotate 3s linear ;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0);
+  }
+
+  to{
+    transform: rotate(90deg);
+    top: 25px;
+    left: 13px;
+    opacity: 1;
+  }
+}
+
+.p4-checkbox-section{
+  width: 500px;
+}
+
+.p4-checkbox-section section{
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  font-size: 19px;
+  margin: 1rem 0rem 0rem .5rem;
+}
+
+
+.p4-checkbox-section label{
+  margin-left: .7rem;
+}
+
+.p4-button-section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.p4-button-section p{
+  display: flex;
+  justify-content: space-between;
+}
+
+.p4-button-section p button{
+  color: white;
+  background-color: #3EB25E;
+  font-weight: 700;
+  font-size: 22px;
+  height: 36px;
+  width: 198px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.p4-button-section button{
+  color: white;
+  background-color: #3EB25E;
+  font-weight: 700;
+  font-size: 22px;
+  height: 36px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.p4-button-section p button:hover, .p4-button-section button:hover{
+  background-color: #FFFF7D;
+  color: black;
+} 
+
+@media screen and (max-width: 1024px){
+  
+  .p4-container{
+    gap: 1rem;
+  }
+  
+  .p4-image{
+    width: 400px;
+  }
+
+  .p4-select-section select{
+    height: 36px;
+  }
+  #triangle {
+    top: 28px;
+  }
+
+
+  .p4-checkbox-section p{
+    width: 400px;
+    font-size: 20px;
+  }
+
+  .p4-button-section{
+    width: 400px;
+  }
+
+  .p4-button-section p button{
+    width: 170px;
+  }
+}
+
+
+@media screen and (max-width: 835px){
+
+  .p4-image{
+    width: 300px;
+  }
+
+  .p4-main-content{
+    width: 300px;
+  }
+
+  .p4-select-section select{
+    width: 330px;
+  }
+
+  .p4-select-section p, .p4-checkbox-section > p{
+    font-size: 20px;
+  }
+
+  .p4-checkbox-section{
+    width: 350px;
+  }
+
+  .p4-checkbox-section p label{
+    font-size: 16px;
+  }
+
+  .p4-checkbox-section p{
+    width: 270px;
+    font-size: 18px;
+  }
+
+  .p4-button-section{
+    width: 330px;
+  }
+
+  .p4-button-section p button{
+    width: 150px;
+    font-size: 18px;
+  }
+
+  .p4-button-section  button{
+    font-size: 18px;
+  }
+}
+
+
+
+@media screen and (max-width: 480px){
+  .p4-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    height: 100vh;
+    margin: .6rem;
+  }
+
+
+  .p4-image{
+    width: 270px;
+  }
+
+  .p4-main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+
+  .p4-select-section p{
+    font-size: 16px;
+  }
+  
+  
+  .p4-select-section select{
+    border-radius: 20px;
+    width: 270px;
+    height: 33px;
+    margin-right: 2rem;
+    appearance: none;
+    text-indent: 30px;
+    font-size: 16px;
+  }
+
+  .p4-select-section p, .p4-checkbox-section > p{
+    margin: 0rem;
+  }
+
+  #triangle {
+    top: 27px;
+  }
+
+  .p4-checkbox-section{
+    width: 300px;
+  }
+
+  .p4-checkbox-section > p{
+    width: 270px;
+  }
+
+  .p4-checkbox-section section{
+    margin: 1rem 0rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+    width: 260px;
+  }
+
+
+  .p4-checkbox-section > p{
+    font-size: 16px;
+  }
+
+  .p4-checkbox-section section label{
+    font-size: 16px;
+    margin-left: .3rem;
+  }
+
+  .p4-button-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .1rem;
+    margin: .3rem;
+    width: 300px;
+  }
+   
+
+
+  .p4-button-section p{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  
+  .p4-button-section p button{
+    color: white;
+    background-color: #3EB25E;
+    font-weight: 700;
+    font-size: 18px;
+    height: 26px;
+    width: 138px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+  }
+  
+  
+  .p4-button-section  button{
+    color: white;
+    background-color: #3EB25E;
+    font-weight: 700;
+    font-size: 18px;
+    height: 26px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+  }
+  
+  .p4-button-section p button:hover, button:hover{
+    background-color: #FFFF7D;
+    color: #000000;
+  }
+}
