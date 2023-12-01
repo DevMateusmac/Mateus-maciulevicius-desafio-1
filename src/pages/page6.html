@@ -3,23 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/page6.css">
   <title>Compass-page-6</title>
 </head>
 <body>
-  <main>
-    <img src="../assets/five.svg" alt="">
-    <section>
-      <form action="">
-        <label for="input-name">Full Name:</label>
-        <input type="text" name="input-name" placeholder="Nasser Toghiri">
+  <main class="p6-main-container">
+    <img src="../assets/five.svg" alt="p6-image" class="p6-image">
+    <section class="p6-form-section">
+      <form>
 
-        <label for="input-email">Email:</label>
-        <input type="email" placeholder="N.Toghiri@Gmail.com">
+        <p>
+          <label for="input-name">Full Name:</label>
+          <input type="text" name="input-name" placeholder="Nasser Toghiri">
+        </p>
 
-        <label for="input-age">Age:</label>
-        <input type="date">
-        <button><a href="page5.html">Back</a></button>
-        <button type="submit">Submit</button>
+        <p>
+          <label for="input-email">Email:</label>
+          <input type="email" placeholder="N.Toghiri@Gmail.com">
+        </p>
+
+        <p>
+          <label for="input-age">Age:</label>
+          <input type="text" placeholder="-- --" class="p6-age-input">
+        </p>
+
+        
+          <section class="p6-button-section">
+            <a href="page5.html">
+              <button type="button">Back</button>
+            </a>
+            <button type="submit">Submit</button>
+          </section>
       </form>
     </section>
   </main>
