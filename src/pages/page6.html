@@ -5,27 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="../styles/page6.css">
+  <script src="../../app/page6.js" defer></script>
   <title>Compass-page-6</title>
 </head>
 <body>
   <main class="p6-main-container">
     <img src="../assets/five.svg" alt="p6-image" class="p6-image">
     <section class="p6-form-section">
-      <form>
+      <form id="p6-form">
 
         <p>
           <label for="input-name">Full Name:</label>
-          <input type="text" name="input-name" placeholder="Nasser Toghiri">
+          <input type="text" id="name-input" placeholder="Nasser Toghiri">
         </p>
 
         <p>
           <label for="input-email">Email:</label>
-          <input type="email" placeholder="N.Toghiri@Gmail.com">
+          <input type="email" id="email-input" placeholder="N.Toghiri@Gmail.com">
         </p>
 
         <p>
           <label for="input-age">Age:</label>
-          <input type="text" placeholder="-- --" class="p6-age-input">
+          <input type="text" id="age-input" placeholder="-- --" class="p6-age-input">
         </p>
 
         
@@ -33,7 +34,7 @@
             <a href="page5.html">
               <button type="button">Back</button>
             </a>
-            <button type="submit">Submit</button>
+            <button type="submit" id="p6-submit">Submit</button>
           </section>
       </form>
     </section>

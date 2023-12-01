@@ -26,6 +26,8 @@
   height: 225px;
   border-radius: 20px;
   resize: none;
+  padding: .6rem;
+  font-family:'Roboto';
 }
 
 
