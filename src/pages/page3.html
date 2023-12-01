@@ -3,58 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/page3.css">
   <title>Compass-page-3</title>
 </head>
 <body>
-  <main>
-    <img src="../assets/two.svg" alt="image-three">
-    <section>
+  <main class="p3-main-container">
+    <img src="../assets/two.svg" alt="image-three" class="p3-image">
+    
+    <section class="p3-content-container">
 
-      <section>
-        <label>What is the status of your account?</label>
-        
-        <select name="accountType" id="accountType">
-          <option value="Select your situation" selected hidden>Select your situation</option>
-          <option value="I have not created an account yet.">I have not created an account yet.</option>
-          <option value="I have an account">I have an account</option>
-          <option value="I have a blocked account">I have a blocked account</option>
-        </select>
+      <section class="p3-first-section">
+        <p>What is the status of your account?</p>
 
+        <section class="p3-select-container">
+          <div class="p3-arrow-container">
+            <div id="triangle"></div>
+            <select name="accountType" id="accountType">            
+              <option value="Select your situation" selected hidden>Select your situation</option>
+              <option value="I have not created an account yet.">I have not created an account yet.</option>
+              <option value="I have an account">I have an account</option>
+              <option value="I have a blocked account">I have a blocked account</option>
+          </select>
+        </div>  
+      </section>
       </section>
 
-      <section>
-        <section>
-          <label for="filialMarket">In which financial markets do you operate?
-          </label>
-        </section>
+      <section class="p3-second-section">
+        <p for="filialMarket">In which financial markets do you operate?
+        </p>
 
-        <section>
-          <p>
-            <input type="radio" name="filialMarket" id="stock market">
+        <section class="p3-radio-section">
+
+          <section>
+            <div class="ellipse-input"></div>
             <label for="stock market">Stock market</label>
-          </p>
-          <p>
+            <input type="radio" name="filialMarket" id="stock market">
+          </section>
+
+          <section>
+            <div class="ellipse-input"></div>
+            <label for="foreign-exchange">Foreign exchange</label>
             <input type="radio" name="filialMarket" id="foreign-exchange">
-            <label for="foreign-exchange">foreign exchange</label>
-          </p>
-          <p>
+          </section>
+
+          <section>
+            <div class="ellipse-input"></div>
+            <label for="commodity">Commodity</label>
             <input type="radio" name="filialMarket" id="commodity">
-            <label for="commodity">commodity</label>
-          </p>
-          <p>
+          </section>
+
+          <section>
+            <div class="ellipse-input"></div>
+            <label for="bond-market">Bond market</label>
             <input type="radio" name="filialMarket" id="bond-market">
-            <label for="bond-market">bond market</label>
-          </p>
-          <p>
-            <input type="radio" name="filialMarket" id="cryptocurrency-market">
-            <label for="cryptocurrency-market">cryptocurrency market</label>
-          </p>          
+          </section>
+
+          <section>
+            <div class="ellipse-input"></div>
+            <label for="cryptocurrency-market">Cryptocurrency market</label>
+            <input type="radio" name="filialMarket" id="cryptocurrency-market" >
+          </section>          
+
         </section>
 
-        <section>
+        <section class="p3-button-section">
           <p>
-            <button><a href="page2.html">Back</a></button>
-            <button><a href="page4.html">Next</a></button>
+            <a href="page2.html">
+              <button>Back</button>
+            </a>
+            <a href="page4.html">
+              <button>Next</button>
+            </a>
           </p>
           <button><a href=""></a>Skip</button>
         </section>
