@@ -1,0 +1,197 @@
+.p5-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 5rem;
+}
+
+.p5-first-section{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+
+.p5-decription-section p{
+  font-size: 26px;
+  font-weight: 800;
+  width: 466px;
+}
+
+.p5-decription-section textarea{
+  margin-top: 1rem;
+  width: 466px;
+  height: 225px;
+  border-radius: 20px;
+  resize: none;
+}
+
+
+.p5-button-section{
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+}
+
+
+.p5-button-section p{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .9rem;
+}
+
+.p5-button-section p button{
+  width: 198px;
+  height: 36px;
+  border-radius: 35px;
+  border: none;
+  background-color: #3EB25E;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+.p5-button-section a{
+  text-decoration: none;
+}
+.link-button button{
+  height: 36px;
+  border-radius: 35px;
+  border: none;
+  background-color: #3EB25E;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  width: 420px;
+}
+
+.p5-button-section p button:hover, .link-button button:hover{
+  background-color: #FFFF7D;
+  color: black;
+}
+
+
+@media screen and (max-width: 1125px){
+  .p5-main-container{
+    gap: 2rem;
+  }
+
+  .p5-image{
+    width: 450px;
+  }
+
+  .p5-first-section{
+    gap: 2rem;
+  }
+
+  .p5-decription-section p{
+    font-size: 25px;
+    width: 400px;
+  }
+
+  .p5-decription-section textarea{
+    padding: .4rem;
+    width: 400px;
+  }
+
+  .p5-button-section{
+    width: 350px;
+  }
+
+  .p5-button-section p button{
+    width: 160px;
+  }
+
+  .link-button button{
+    width: 350px;
+  }
+}
+
+
+@media screen and (max-width: 770px){
+  .p5-image{
+    width: 300px;
+  }
+  .p5-decription-section p{
+    font-size: 22px;
+    width: 300px;
+  }
+
+  .p5-decription-section textarea{
+    padding: .4rem;
+    width: 300px;
+    height: 180px;
+  }
+
+  .p5-button-section{
+    width: 280px;
+  }
+
+  .p5-button-section p button{
+    width: 130px;
+    height: 28px;
+  }
+
+  .link-button button{
+    width: 280px;
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .p5-main-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .p5-image{
+    width: 280px;
+  }
+
+
+  .p5-first-section{
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .p5-first-section p{
+    width: 261px;
+    font-size: 16px;
+  }
+
+  .p5-decription-section textarea{
+    width: 260px;
+  }
+
+  .p5-button-section{
+    align-self: center;
+  }
+
+  .p5-button-section{
+    width: 268px;
+  }
+
+  .p5-button-section p{
+    margin-bottom: .5rem;
+  }
+
+  .p5-button-section p{
+    width: 268px;
+  }
+
+  .p5-button-section p button{
+    width: 125px;
+    height: 26px;
+    font-size: 16px;
+  }
+
+  .link-button button{
+    width: 268px;
+    height: 26px;
+    font-size: 16px;
+  }
+
+
+}
